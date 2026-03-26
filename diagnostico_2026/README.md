@@ -183,9 +183,15 @@ diagnostico_2026/
 │
 ├── README.md                          ← Este archivo
 │
-├── enunciado_documentacion_extra/
+├── enunciado/
 │   ├── enunciado.md                   ← Enunciado en formato Markdown
 │   └── enunciado.txt                  ← Enunciado en texto plano
+│
+├── documentacion_soporte/
+│   ├── clase-pojo.md                  ← Documentación: Clase POJO
+│   ├── modelado-clases.md             ← Documentación: Modelado de Clases
+│   ├── gestor.md                      ← Documentación: Patrón Gestor
+│   └── arraylist.md                   ← Documentación: ArrayList en Java
 │
 └── implementacion/
     ├── Main.java                      ← Interfaz de usuario (menú)
