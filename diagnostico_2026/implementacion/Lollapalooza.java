@@ -2,15 +2,55 @@ package diagnostico_2026.implementacion;
 
 import java.util.ArrayList;
 
+/**
+ * Clase gestor principal del festival Lollapalooza.
+ * 
+ * Esta es la clase más importante del sistema. Actúa como "gestor" o "controlador" 
+ * del festival. Almacena y gestiona toda la información del evento:
+ * - Los escenarios disponibles
+ * - Todas las actuaciones programadas
+ * - Los datos generales del festival
+ * 
+ * La clase Lollapalooza contiene toda la lógica de negocio: permite añadir escenarios
+ * y actuaciones, y ejecutar búsquedas complejas (por día, por escenario, por banda).
+ * 
+ * Nota: Esta clase implementa el patrón de diseño SINGLETON (aunque en versión simplificada).
+ * En un sistema real, solo habría una instancia del festival ejecutándose.
+ * 
+ * @author Nicolás Butterfield
+ * @version 1.0
+ * @see Escenario
+ * @see Actuacion
+ */
 public class Lollapalooza {
 
-    private String pais;                    // "Argentina"
-    private String edicion;                 // "2026"
-    private String lugar;                   // "Hipódromo de San Isidro"
-    private int cantidadDias;               // 3
-    private ArrayList<Escenario> escenarios;   // Lista de Escenarios (ArrayList)
-    private ArrayList<Actuacion> actuaciones; // Almacena las actuaciones (ArrayList)
+    /** País donde se realiza el festival (ej: "Argentina") */
+    private String pais;
+    
+    /** Edición o año del festival (ej: "2026") */
+    private String edicion;
+    
+    /** Ubicación física donde ocurre el festival (ej: "Hipódromo de San Isidro") */
+    private String lugar;
+    
+    /** Cantidad de días que dura el festival */
+    private int cantidadDias;
+    
+    /** Lista de todos los escenarios disponibles en el festival */
+    private ArrayList<Escenario> escenarios;
+    
+    /** Lista de todas las actuaciones programadas en el festival */
+    private ArrayList<Actuacion> actuaciones;
 
+    /**
+     * Crea un nuevo festival Lollapalooza con sus datos básicos.
+     * Se crean las listas de escenarios y actuaciones vacías, listas para recibir datos.
+     * 
+     * @param pais         País donde se realiza el festival
+     * @param edicion      Año o edición del festival
+     * @param lugar        Ubicación física del festival
+     * @param cantidadDias Cantidad de días que durará el festival
+     */
     public Lollapalooza(String pais, String edicion, String lugar, int cantidadDias) {
         this.pais = pais;
         this.edicion = edicion;
@@ -20,7 +60,14 @@ public class Lollapalooza {
         this.actuaciones = new ArrayList<>();
     }
 
-    // Agrega un escenario si no existe aún
+    /**
+     * Agrega un nuevo escenario al festival.
+     * 
+     * Para evitar duplicados, verifica si el escenario ya existe antes de agregarlo.
+     * Si el escenario es nulo (null), ignora la operación.
+     * 
+     * @param escenario El escenario a agregar
+     */
     public void agregarEscenario(Escenario escenario) {
         if (escenario == null) return;
         if (!escenarios.contains(escenario)) {
@@ -28,7 +75,14 @@ public class Lollapalooza {
         }
     }
 
-    // Agrega una actuación y asegura que su escenario esté registrado
+    /**
+     * Agrega una nueva actuación al festival.
+     * 
+     * También intenta asegurar que el escenario de la actuación esté registrado
+     * en el festival. Si no existe, lo agrega automáticamente.
+     * 
+     * @param actuacion La actuación a programar
+     */
     public void agregarActuacion(Actuacion actuacion) {
         if (actuacion == null) return;
         actuaciones.add(actuacion);
@@ -42,7 +96,16 @@ public class Lollapalooza {
         }
     }
 
-    // Devuelve las actuaciones que ocurren en la fecha dada (comparación por igualdad de cadena)
+    /**
+     * Busca todas las actuaciones que ocurren en una fecha específica.
+     * 
+     * Itera sobre todas las actuaciones del festival y compara sus fechas
+     * con la fecha buscada. Retorna una lista con las coincidencias.
+     * 
+     * @param fecha La fecha a buscar en formato "YYYY-MM-DD"
+     * @return Una lista de actuaciones que ocurren en esa fecha. 
+     *         Si no hay coincidencias, retorna una lista vacía.
+     */
     public ArrayList<Actuacion> getActuacionesPorDia(String fecha) {
         ArrayList<Actuacion> resultado = new ArrayList<>();
         if (fecha == null) return resultado;
@@ -59,7 +122,16 @@ public class Lollapalooza {
         return resultado;
     }
 
-    // Devuelve las actuaciones que ocurren en el escenario indicado
+    /**
+     * Busca todas las actuaciones que ocurren en un escenario específico.
+     * 
+     * Itera sobre todas las actuaciones del festival y compara sus escenarios
+     * con el escenario buscado. Retorna una lista con las coincidencias.
+     * 
+     * @param escenario El escenario donde buscar actuaciones
+     * @return Una lista de actuaciones en ese escenario.
+     *         Si no hay coincidencias, retorna una lista vacía.
+     */
     public ArrayList<Actuacion> getActuacionesPorEscenario(Escenario escenario) {
         ArrayList<Actuacion> resultado = new ArrayList<>();
         if (escenario == null) return resultado;
@@ -76,7 +148,19 @@ public class Lollapalooza {
         return resultado;
     }
 
-    // Busca actuaciones por nombre de banda (coincidencia parcial, case-insensitive)
+    /**
+     * Busca actuaciones por nombre de banda.
+     * 
+     * Realiza una búsqueda que:
+     * - NO es sensible a mayúsculas/minúsculas (ej: "The Strokes" = "the strokes")
+     * - Permite búsqueda parcial (ej: buscar "metal" encontrará "Metallica")
+     * 
+     * Esto hacela búsqueda más amigable para el usuario.
+     * 
+     * @param nombre El nombre o parte del nombre de la banda a buscar
+     * @return Una lista de actuaciones de bandas que coinciden con la búsqueda.
+     *         Si no hay coincidencias, retorna una lista vacía.
+     */
     public ArrayList<Actuacion> buscarActuacionPorNombreBanda(String nombre) {
         ArrayList<Actuacion> resultado = new ArrayList<>();
         if (nombre == null) return resultado;
@@ -95,7 +179,19 @@ public class Lollapalooza {
         return resultado;
     }
 
-    // Método para cargar datos de ejemplo para demostración
+    /**
+     * Carga datos de ejemplo en el festival para fines de demostración y testing.
+     * 
+     * Este método automáticamente crea:
+     * - 4 escenarios diferentes (Principal, Alternativo, Electrónico, Acústico)
+     * - 10 actuaciones distribuidas en 3 días
+     * - Bandas conocidas como Foo Fighters, Metallica, Arctic Monkeys, etc.
+     * 
+     * Es muy útil para:
+     * - Probar que el sistema funciona correctamente
+     * - Ver ejemplos de cómo se estructura la información
+     * - Demostrar las búsquedas sin escribir datos manualmente
+     */
     public void cargarDatosEjemplo() {
         // Crear escenarios
         Escenario principal = new Escenario("Escenario Principal", "Zona Norte", 50000);
@@ -136,11 +232,22 @@ public class Lollapalooza {
         agregarActuacion(act10);
     }
 
-    // Getters básicos
+    /**
+     * Obtiene la lista de todos los escenarios registrados en el festival.
+     * 
+     * @return ArrayList con todos los escenarios. Si no hay escenarios,
+     *         retorna una lista vacía (nunca retorna null).
+     */
     public ArrayList<Escenario> getEscenarios() {
         return escenarios;
     }
 
+    /**
+     * Obtiene la lista de todas las actuaciones programadas en el festival.
+     * 
+     * @return ArrayList con todas las actuaciones. Si no hay actuaciones,
+     *         retorna una lista vacía (nunca retorna null).
+     */
     public ArrayList<Actuacion> getActuaciones() {
         return actuaciones;
     }

@@ -3,9 +3,28 @@ package diagnostico_2026.implementacion;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Clase principal que proporciona la interfaz de usuario del sistema.
+ * 
+ * Esta clase es responsable de:
+ * - Mostrar menús interactivos al usuario
+ * - Capturar la entrada/solicitudes del usuario desde la consola
+ * - Llamar a los métodos del gestor Lollapalooza para realizar operaciones
+ * - Controlar el flujo de la aplicación
+ * 
+ * Es importante notar que Main NO contiene lógica de negocio. Toda la lógica
+ * está en la clase Lollapalooza. Main es solo la "interfaz" con el usuario.
+ * 
+ * @author Nicolás Butterfield
+ * @version 1.0
+ * @see Lollapalooza
+ */
 public class Main {
 
+    /** Instancia global del festival Lollapalooza */
     private static Lollapalooza festival;
+    
+    /** Scanner para capturar entrada del usuario desde la consola */
     private static Scanner scanner;
 
     public static void main(String[] args) {
