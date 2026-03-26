@@ -44,53 +44,61 @@ El programa del festival incluye por cada banda que toca:
 ### Diagrama de Clases
 
 ```
-┌─────────────────────────┐
-│      Lollapalooza       │  ◄── GESTOR PRINCIPAL
-├─────────────────────────┤
-│ - pais: String          │
-│ - edicion: String       │
-│ - sede: String          │
-│ - cantidadDias: int     │
-│ - escenarios: ArrayList │
-│ - actuaciones: ArrayList│
-├─────────────────────────┤
-│ + agregarEscenario()    │
-│ + agregarActuacion()    │
-│ + buscar...()           │
-│ + cargarDatosEjemplo()  │
-└────────┬────────────────┘
-         │ gestiona
-         │
-    ┌────┴────────────────────────┐
-    │                             │
-┌───▼─────────────┐     ┌─────────▼──────┐
-│   Escenario     │     │   Actuacion    │
-├─────────────────┤     ├────────────────┤
-│ - nombre        │◄────┤ - nombreBanda  │
-│ - ubicacion     │ usa │ - duracion     │
-│ - capacidad     │     │ - fecha        │
-├─────────────────┤     │ - horaInicio   │
-│ + getNombre()   │     │ - escenario    │
-│ + toString()    │     ├────────────────┤
-│ + equals()      │     │ + getters()    │
-└─────────────────┘     │ + toString()   │
-                        └────────────────┘
-         ▲
-         │ representa
-         │
-    ┌────┴────────────┐
-    │     Banda       │  (Clase POJO adicional)
-    ├─────────────────┤
-    │ - nombre        │
-    │ - integrantes   │
-    │ - estiloMusical │
-    │ - paisOrigen    │
-    │ - anioFormacion │
-    ├─────────────────┤
-    │ + getters()     │
-    │ + setters()     │
-    │ + toString()    │
-    └─────────────────┘
+                                ┌────────────────────────────┐
+                                │     LOLLAPALOOZA           │
+                                │     (Gestor Principal)     │
+                                ├────────────────────────────┤
+                                │  - pais: String            │
+                                │  - edicion: String         │
+                                │  - sede: String            │
+                                │  - cantidadDias: int       │
+                                │  - escenarios: ArrayList   │
+                                │  - actuaciones: ArrayList  │
+                                ├────────────────────────────┤
+                                │  + agregarEscenario()      │
+                                │  + agregarActuacion()      │
+                                │  + buscar...()             │
+                                │  + cargarDatosEjemplo()    │
+                                └────────────┬───────────────┘
+                                             │
+                                             │ gestiona
+                                             │
+                    ┌────────────────────────┼────────────────────────┐
+                    │                        │                        │
+                    │                        │                        │
+                    ▼                        ▼                        ▼
+          ┌──────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+          │      BANDA       │     │   ACTUACION     │     │   ESCENARIO     │
+          ├──────────────────┤     ├─────────────────┤     ├─────────────────┤
+          │ - nombre         │     │ - nombreBanda   │     │ - nombre        │
+          │ - integrantes    │     │ - duracion      │     │ - ubicacion     │
+          │ - estilo         │     │ - fecha         │     │ - capacidad     │
+          │ - paisOrigen     │     │ - horaInicio    │     ├─────────────────┤
+          │ - anioFormacion  │     │ - escenario     │     │ + getNombre()   │
+          ├──────────────────┤     ├─────────────────┤     │ + equals()      │
+          │ + getters()      │     │ + getters()     │     │ + hashCode()    │
+          │ + setters()      │     │ + toString()    │     └─────────────────┘
+          │ + toString()     │     └────────┬────────┘              ▲
+          └─────────┬────────┘              ▲                       │
+                    │                       │                       │
+                    │      realiza          │        ocurre en      │
+                    │                       │                       │
+                    └───────────────────────┘                       │
+                                                                    │
+                                            └───────────────────────┘
+
+
+        ┌─────────────────────────────────────────────────────────────────┐
+        │                   RELACIONES DEL MODELO                         │
+        ├─────────────────────────────────────────────────────────────────┤
+        │                                                                 │
+        │  • Lollapalooza gestiona → Banda                                │
+        │  • Lollapalooza gestiona → Actuacion                            │
+        │  • Lollapalooza gestiona → Escenario                            │
+        │  • Banda realiza → Actuacion                                    │
+        │  • Actuacion ocurre en → Escenario                              │
+        │                                                                 │
+        └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 📦 Descripción de las Clases
