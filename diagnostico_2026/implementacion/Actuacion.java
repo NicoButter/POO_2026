@@ -6,9 +6,9 @@ public class Actuacion {
     private int duracionMinutos;
     private String fecha;       // formato libre, p.ej. "2026-04-03"
     private String horaInicio;  // p.ej. "20:30"
-    private String escenario;
+    private Escenario escenario;
 
-    public Actuacion(String nombreBanda, int duracionMinutos, String fecha, String horaInicio, String escenario) {
+    public Actuacion(String nombreBanda, int duracionMinutos, String fecha, String horaInicio, Escenario escenario) {
         this.nombreBanda = nombreBanda;
         this.duracionMinutos = duracionMinutos;
         this.fecha = fecha;
@@ -32,7 +32,7 @@ public class Actuacion {
         return horaInicio;
     }
 
-    public String getEscenario() {
+    public Escenario getEscenario() {
         return escenario;
     }
 
@@ -43,7 +43,7 @@ public class Actuacion {
                 ", duracionMinutos=" + duracionMinutos +
                 ", fecha='" + fecha + '\'' +
                 ", horaInicio='" + horaInicio + '\'' +
-                ", escenario='" + escenario + '\'' +
+                ", escenario=" + (escenario != null ? escenario.getNombre() : "N/A") +
                 '}';
     }
 }

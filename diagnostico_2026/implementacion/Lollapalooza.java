@@ -8,7 +8,7 @@ public class Lollapalooza {
     private String edicion;                 // "2026"
     private String lugar;                   // "Hipódromo de San Isidro"
     private int cantidadDias;               // 3
-    private ArrayList<String> escenarios;   // Lista de nombres de escenarios (ArrayList)
+    private ArrayList<Escenario> escenarios;   // Lista de Escenarios (ArrayList)
     private ArrayList<Actuacion> actuaciones; // Almacena las actuaciones (ArrayList)
 
     public Lollapalooza(String pais, String edicion, String lugar, int cantidadDias) {
@@ -21,10 +21,10 @@ public class Lollapalooza {
     }
 
     // Agrega un escenario si no existe aún
-    public void agregarEscenario(String nombreEscenario) {
-        if (nombreEscenario == null) return;
-        if (!escenarios.contains(nombreEscenario)) {
-            escenarios.add(nombreEscenario);
+    public void agregarEscenario(Escenario escenario) {
+        if (escenario == null) return;
+        if (!escenarios.contains(escenario)) {
+            escenarios.add(escenario);
         }
     }
 
@@ -33,7 +33,7 @@ public class Lollapalooza {
         if (actuacion == null) return;
         actuaciones.add(actuacion);
         try {
-            String esc = actuacion.getEscenario();
+            Escenario esc = actuacion.getEscenario();
             if (esc != null && !escenarios.contains(esc)) {
                 escenarios.add(esc);
             }
@@ -60,7 +60,7 @@ public class Lollapalooza {
     }
 
     // Devuelve las actuaciones que ocurren en el escenario indicado
-    public ArrayList<Actuacion> getActuacionesPorEscenario(String escenario) {
+    public ArrayList<Actuacion> getActuacionesPorEscenario(Escenario escenario) {
         ArrayList<Actuacion> resultado = new ArrayList<>();
         if (escenario == null) return resultado;
         for (Actuacion a : actuaciones) {
@@ -95,8 +95,8 @@ public class Lollapalooza {
         return resultado;
     }
 
-    // Getters básicos (opcional)
-    public ArrayList<String> getEscenarios() {
+    // Getters básicos
+    public ArrayList<Escenario> getEscenarios() {
         return escenarios;
     }
 
