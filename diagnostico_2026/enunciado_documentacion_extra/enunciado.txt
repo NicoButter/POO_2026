@@ -1,0 +1,13 @@
+ENUNCIADO:
+
+El Lollapalooza es un festival de música que se hace en muchos países, entre ellos Argentina, la particularidad 
+de este evento es que dura varios días y participan decenas de bandas de rock/pop. El programa del festival, incluye 
+por cada banda que toca, el nombre, duración de su participación, fecha de la participación, hora de inicio de la 
+participación, y el escenario.
+
+Los asistentes al festival, pueden consultar en línea el programa, buscar los datos de actuación de una banda, las 
+bandas que tocan un determinado día, y las bandas que tocan en un determinado escenario.
+
+ 
+Realice el modelado del enunciado. Codifique las clases (gestor y clase pojo). Realice un menú que permita hacer 
+las operaciones.
