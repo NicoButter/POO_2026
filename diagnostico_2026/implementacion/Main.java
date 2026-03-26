@@ -19,6 +19,9 @@ public class Main {
         // Crear festival
         crearFestival();
 
+        // Preguntar si desea cargar datos de ejemplo
+        cargarDatosDeEjemplo();
+
         while (!salir) {
             mostrarMenu();
             System.out.print("Seleccione una opción: ");
@@ -73,6 +76,20 @@ public class Main {
 
         festival = new Lollapalooza(pais, edicion, lugar, dias);
         System.out.println("Festival creado: " + pais + " - Edición " + edicion + "\n");
+    }
+
+    private static void cargarDatosDeEjemplo() {
+        System.out.print("¿Desea cargar datos de ejemplo para probar el sistema? (S/N): ");
+        String respuesta = scanner.nextLine().trim().toUpperCase();
+        
+        if (respuesta.equals("S") || respuesta.equals("SI")) {
+            festival.cargarDatosEjemplo();
+            System.out.println("✓ Datos de ejemplo cargados exitosamente.");
+            System.out.println("  - 4 escenarios agregados");
+            System.out.println("  - 10 actuaciones agregadas en 3 días (2026-03-28 a 2026-03-30)\n");
+        } else {
+            System.out.println("Sistema iniciado sin datos. Use el menú para agregar información.\n");
+        }
     }
 
     private static void mostrarMenu() {
