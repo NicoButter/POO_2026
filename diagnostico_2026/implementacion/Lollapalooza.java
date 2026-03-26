@@ -30,8 +30,8 @@ public class Lollapalooza {
     /** Edición o año del festival (ej: "2026") */
     private String edicion;
     
-    /** Ubicación física donde ocurre el festival (ej: "Hipódromo de San Isidro") */
-    private String lugar;
+    /** Sede o recinto donde ocurre el festival (ej: "Hipódromo de San Isidro") */
+    private String sede;
     
     /** Cantidad de días que dura el festival */
     private int cantidadDias;
@@ -48,13 +48,13 @@ public class Lollapalooza {
      * 
      * @param pais         País donde se realiza el festival
      * @param edicion      Año o edición del festival
-     * @param lugar        Ubicación física del festival
+     * @param sede         Sede o recinto donde se realiza el festival
      * @param cantidadDias Cantidad de días que durará el festival
      */
-    public Lollapalooza(String pais, String edicion, String lugar, int cantidadDias) {
+    public Lollapalooza(String pais, String edicion, String sede, int cantidadDias) {
         this.pais = pais;
         this.edicion = edicion;
-        this.lugar = lugar;
+        this.sede = sede;
         this.cantidadDias = cantidadDias;
         this.escenarios = new ArrayList<>();
         this.actuaciones = new ArrayList<>();

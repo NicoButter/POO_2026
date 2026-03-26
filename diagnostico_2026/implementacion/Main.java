@@ -87,13 +87,13 @@ public class Main {
         System.out.print("Ingrese la edición (ej: 2026): ");
         String edicion = scanner.nextLine();
 
-        System.out.print("Ingrese el lugar: ");
-        String lugar = scanner.nextLine();
+        System.out.print("Ingrese la sede/recinto del festival (ej: Hipódromo de San Isidro): ");
+        String sede = scanner.nextLine();
 
         System.out.print("Ingrese la cantidad de días: ");
         int dias = leerEntero();
 
-        festival = new Lollapalooza(pais, edicion, lugar, dias);
+        festival = new Lollapalooza(pais, edicion, sede, dias);
         System.out.println("Festival creado: " + pais + " - Edición " + edicion + "\n");
     }
 

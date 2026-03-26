@@ -49,7 +49,7 @@ El programa del festival incluye por cada banda que toca:
 ├─────────────────────────┤
 │ - pais: String          │
 │ - edicion: String       │
-│ - lugar: String         │
+│ - sede: String          │
 │ - cantidadDias: int     │
 │ - escenarios: ArrayList │
 │ - actuaciones: ArrayList│
@@ -101,7 +101,7 @@ El programa del festival incluye por cada banda que toca:
 **Atributos:**
 - `pais`: País donde se realiza el festival
 - `edicion`: Año o edición del festival
-- `lugar`: Ubicación física del evento
+- `sede`: Sede o recinto donde se realiza el evento
 - `cantidadDias`: Número de días que dura el festival
 - `escenarios`: Lista de escenarios disponibles
 - `actuaciones`: Lista de todas las actuaciones programadas
@@ -256,7 +256,7 @@ javac *.java && java diagnostico_2026.implementacion.Main
    ```
    Ingrese el país del festival: Argentina
    Ingrese la edición (ej: 2026): 2026
-   Ingrese el lugar: Hipódromo de San Isidro
+   Ingrese la sede/recinto del festival: Hipódromo de San Isidro
    Ingrese la cantidad de días: 3
    ```
 
