@@ -12,7 +12,7 @@ Este repositorio fue diseñado como un complemento académico integral para la m
 
 ### Objetivo Educativo
 
-El material que encontrarás aquí tiene un propósito claro: **enriquecer tu experiencia de aprendizaje** más allá de lo visto en clases teóricas y prácticas. No pretendemos ser un sustituto de la bibliografía recomendada ni de la enseñanza en aula, sino **un puente entre la teoría y la práctica** que:
+El material que vas a encontrar acá tiene un propósito claro: **enriquecer tu experiencia de aprendizaje** más allá de lo visto en clases teóricas y prácticas. No pretendo ser un sustituto de la bibliografía recomendada ni de la enseñanza en aula, sino **un puente entre la teoría y la práctica** que:
 
 ✨ **Complementa** los conceptos teóricos con ejercicios prácticos contextualizados  
 ✨ **Expande** la bibliografía oficial con explicaciones adicionales y ejemplos concretos  
@@ -121,11 +121,10 @@ Cada proyecto en este repositorio sigue una estructura consistente:
 ## 🔧 Requisitos Técnicos (Generales)
 
 - **Java JDK**: Versión 8 o superior
-- **Sistema Operativo**: Linux, Windows o macOS
+- **Sistema Operativo**: Linux OpenSUSE en lo posible, Windows o macOS
 - **Terminal/Consola**: Para compilar y ejecutar
 - **Editor de Código** (recomendado):
   - VS Code con extensión "Extension Pack for Java"
-  - IntelliJ IDEA Community Edition
   - NetBeans
 
 > Nota: Cada proyecto puede tener requisitos específicos adicionales documentados en su README
