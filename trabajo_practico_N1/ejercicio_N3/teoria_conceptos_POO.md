@@ -216,9 +216,9 @@ public class Hija extends Base {
 
 | Situación | Código | Super | Resultado |
 |-----------|--------|-------|-----------|
-| Base() existe | `Hija() { j=120; }` | Automático: `super()` | ✅ Compila |
-| Base(int) solo | `Hija() { j=120; }` | Automático: intenta `super()` | ❌ Error |
-| Base(int) solo | `Hija() { super(10); j=120; }` | Explícito: `super(10)` | ✅ Compila |
+| Base() existe  | `Hija() { j=120; }`            | Automático: `super()`         | ✅ Compila |
+| Base(int) solo | `Hija() { j=120; }`            | Automático: intenta `super()` | ❌ Error |
+| Base(int) solo | `Hija() { super(10); j=120; }` | Explícito: `super(10)`        | ✅ Compila |
 
 ---
 
