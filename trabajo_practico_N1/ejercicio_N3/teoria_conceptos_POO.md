@@ -532,7 +532,7 @@ Para información sobre estos conceptos, consulta los documentos de los Ejercici
 
 ```
 ╔════════════════════════════════════════════════════════════════════════╗
-║ VARIANTE 3.1: Ambos con constructores                                 ║
+║ VARIANTE 3.1: Ambos con constructores                                  ║
 ╠════════════════════════════════════════════════════════════════════════╣
 ║ Base: Base()          ← Existe                                         ║
 ║ Hija: Hija()          ← Existe (super() automático de Java)            ║
@@ -541,28 +541,28 @@ Para información sobre estos conceptos, consulta los documentos de los Ejercici
 ╚════════════════════════════════════════════════════════════════════════╝
 
 ╔════════════════════════════════════════════════════════════════════════╗
-║ VARIANTE 3.2: Hija sin constructor explícito                          ║
+║ VARIANTE 3.2: Hija sin constructor explícito                           ║
 ╠════════════════════════════════════════════════════════════════════════╣
 ║ Base: Base()          ← Existe                                         ║
-║ Hija: Hija()          ← Implicito (Java lo crea)                      ║
+║ Hija: Hija()          ← Implicito (Java lo crea)                       ║
 ║ Salida: j=0, i=100                                                     ║
 ║ ✅ COMPILA                                                             ║
 ╚════════════════════════════════════════════════════════════════════════╝
 
 ╔════════════════════════════════════════════════════════════════════════╗
-║ VARIANTE 3.3: Base sin constructor sin parámetros                     ║
+║ VARIANTE 3.3: Base sin constructor sin parámetros                      ║
 ╠════════════════════════════════════════════════════════════════════════╣
-║ Base: Base(int n)     ← Existe (solo con parámetros)                  ║
-║ Hija: Hija()          ← Intenta super() → FALLA                       ║
+║ Base: Base(int n)     ← Existe (solo con parámetros)                   ║
+║ Hija: Hija()          ← Intenta super() → FALLA                        ║
 ║ Salida: N/A                                                            ║
 ║ ❌ NO COMPILA                                                          ║
 ╚════════════════════════════════════════════════════════════════════════╝
 
 ╔════════════════════════════════════════════════════════════════════════╗
-║ VARIANTE 3.4: super() explícito con argumento                         ║
+║ VARIANTE 3.4: super() explícito con argumento                          ║
 ╠════════════════════════════════════════════════════════════════════════╣
-║ Base: Base(int n)     ← Existe (solo con parámetros)                  ║
-║ Hija: Hija()          ← super(110) explícito                          ║
+║ Base: Base(int n)     ← Existe (solo con parámetros)                   ║
+║ Hija: Hija()          ← super(110) explícito                           ║
 ║ Salida: j=120, i=110                                                   ║
 ║ ✅ COMPILA                                                             ║
 ╚════════════════════════════════════════════════════════════════════════╝
