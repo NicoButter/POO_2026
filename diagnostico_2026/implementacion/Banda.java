@@ -117,6 +117,12 @@ public class Banda {
         this.anioFormacion = anioFormacion;
     }
 
+    /**
+     * Representación en texto de la banda con todos sus atributos.
+     * Formato: Banda{nombre='...', integrantes='...', estiloMusical='...', paisOrigen='...', anioFormacion=XXXX}
+     * 
+     * @return String con información completa de la banda
+     */
     @Override
     public String toString() {
         return "Banda{" +

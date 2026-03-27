@@ -10,7 +10,7 @@ package diagnostico_2026.implementacion;
  * Por ejemplo: "Foo Fighters tocando en el Escenario Principal el 28/03/2026 a las 21:00 por 90 minutos"
  * 
  * @author Nicolás Butterfield
- * @version 1.0
+ * @version 2.0 - Refactorizado con separación de responsabilidades OOP
  * @see Escenario
  */
 public class Actuacion {
@@ -87,14 +87,14 @@ public class Actuacion {
         return escenario;
     }
 
+    /**
+     * Representación en texto de la actuación para mostrar al usuario
+     * @return String formateado con la información de la actuación
+     */
     @Override
     public String toString() {
-        return "Actuacion{" +
-                "nombreBanda='" + nombreBanda + '\'' +
-                ", duracionMinutos=" + duracionMinutos +
-                ", fecha='" + fecha + '\'' +
-                ", horaInicio='" + horaInicio + '\'' +
-                ", escenario=" + (escenario != null ? escenario.getNombre() : "N/A") +
-                '}';
+        String nombreEscenario = (escenario != null ? escenario.getNombre() : "N/A");
+        return nombreBanda + " - " + fecha + " a " + horaInicio + " - Escenario: " + 
+               nombreEscenario + " (" + duracionMinutos + " min)";
     }
 }

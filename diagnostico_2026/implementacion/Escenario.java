@@ -10,7 +10,7 @@ package diagnostico_2026.implementacion;
  * Por ejemplo: "Escenario Principal en Zona Norte con capacidad para 50,000 personas"
  * 
  * @author Nicolás Butterfield
- * @version 1.0
+ * @version 2.0 - Refactorizado con separación de responsabilidades OOP
  */
 public class Escenario {
 
@@ -78,13 +78,13 @@ public class Escenario {
         this.capacidad = capacidad;
     }
 
+    /**
+     * Representación en texto del escenario para mostrar al usuario
+     * @return String formateado con la información del escenario
+     */
     @Override
     public String toString() {
-        return "Escenario{" +
-                "nombre='" + nombre + '\'' +
-                ", ubicacion='" + ubicacion + '\'' +
-                ", capacidad=" + capacidad +
-                '}';
+        return nombre + " - " + ubicacion + " (Capacidad: " + capacidad + ")";
     }
 
     /**
