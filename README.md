@@ -4,7 +4,7 @@
    <img src="img/background.png" alt="Banner POO 2026" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px #0002;"/>
 </div>
 
-# 📚 Programación Orientada a Objetos (POO) 2026 - Material de Soporte Extracurricular
+# Programación Orientada a Objetos (POO) 2026 - Material de Soporte Extracurricular
 
 **Autor:** Nicolás Butterfield  
 📧 nicobutter@gmail.com  
