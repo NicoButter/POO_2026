@@ -18,7 +18,7 @@ Este repositorio fue diseñado como un complemento académico integral para la m
 
 ### Objetivo Educativo
 
-El material que vas a encontrar acá tiene un propósito claro: **enriquecer tu experiencia de aprendizaje** más allá de lo visto en clases teóricas y prácticas. No pretendo que este material sea un sustituto de la bibliografía recomendada ni de la enseñanza en aula, sino complemento, **un puente entre la teoría y la práctica** que:
+El material que vas a encontrar acá tiene un propósito claro: **enriquecer tu experiencia de aprendizaje** más allá de lo visto en clases teóricas y prácticas. No pretendo que este material sea un sustituto de la bibliografía recomendada ni de la enseñanza en aula, sino un complemento, **un puente entre la teoría y la práctica** que:
 
 ✨ **Complementa** los conceptos teóricos con ejercicios prácticos contextualizados  
 ✨ **Expande** la bibliografía oficial con explicaciones adicionales y ejemplos concretos  
@@ -260,20 +260,20 @@ Este material fue creado con propósito educativo. Siéntete libre de:
 
 ## 🙏 Gratitud
 
-A todos los docentes de la materia por proporcionar la base teórica en la que se fundamenta este material.  
-A los estudiantes que antes que tú han enfrentado estos desafíos y nos ayudan a mejorar constantemente.  
-A ti, por dedicar tu tiempo a aprender y crecer profesionalmente.
+A todos los docentes de la materia por proporcionar la base teórica y práctica en la que se fundamenta este material.  
+A los estudiantes que antes que vos han enfrentado estos desafíos y me ayudan a mejorar constantemente.  
+A vos, por dedicar tu tiempo a aprender y crecer profesionalmente.
 
 ---
 
 ## 📌 Nota Final
 
-Recuerda que la programación es una habilidad que se desarrolla con **práctica constante** y **paciencia**. Los errores no son fracasos, son **oportunidades de aprendizaje**. Este material está aquí para acompañarte en ese camino.
+Recordá que la programación es una habilidad que se desarrolla con **práctica constante** y **paciencia**. Los errores no son fracasos, son **oportunidades de aprendizaje**. Este material está acá para acompañarte en ese camino.
 
 **¡Bienvenido al mundo de la Programación Orientada a Objetos!** 🚀
 
 ---
 
-**Última actualización:** 26 de marzo de 2026  
+**Última actualización:** 30 de marzo de 2026  
 **Versión:** 1.0  
 **Estado:** En construcción (nuevos proyectos durante la cursada)
