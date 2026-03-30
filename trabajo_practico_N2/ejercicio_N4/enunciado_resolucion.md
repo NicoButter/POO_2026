@@ -1,38 +1,6 @@
-# Ejercicio 3 — Excepciones, finally y propagación
+# Ejercicio 4 — printStackTrace() y propagación de excepciones
 
 ## Enunciado
-
-Dado el método metodoC de la clase C, indique:
-
-a) ¿Qué sentencias y en qué orden se ejecutan si se produce la excepción MioException?
-
-b) ¿Qué sentencias y en qué orden se ejecutan si no se produce la excepción MioException?
-
-c) ¿Qué sentencias y en qué orden se ejecutan si se produce la excepción TuException?
-
-```java
-public class C {
-    public C(){}
-    public void metodoC() throws OtraException {
-        sentencia_c1;
-        try {
-            sentencia_c2;
-            sentencia_c3;
-        } catch (MioException e) {
-            sentencia_c4;
-        } catch (TuException e) {
-            sentencia_c5;
-            throw new OtraException();
-        } finally {
-            sentencia_c6;
-        }
-    }
-}
-```
-
----
-
-## Ejercicio 4 — printStackTrace() y propagación de excepciones
 
 En el método `metE` de la clase `E` se produce una excepción. Al atrapar la excepción se ejecuta el método `printStackTrace()`. ¿Qué salida tiene el método si:
 
@@ -41,7 +9,7 @@ b) la excepción es atrapada en `C.metC()`
 c) la excepción es atrapada en `B.metB()`
 d) la excepción es atrapada en `A.main()`
 
-### Respuestas
+## Respuestas
 
 Cuando se ejecuta `printStackTrace()`, se imprime la traza de llamadas de métodos desde el punto donde se lanzó la excepción hasta el punto donde fue atrapada. La traza muestra el recorrido de la excepción por la pila de llamadas.
 
@@ -62,7 +30,7 @@ Exception in thread "main" NombreDeLaExcepcion: mensaje
 
 Dependiendo de dónde se atrape la excepción, la traza mostrará hasta ese método:
 
-#### a) Si la excepción es atrapada en `D.metD()`
+### a) Si la excepción es atrapada en `D.metD()`
 
 La traza será:
 ```
@@ -71,7 +39,7 @@ Exception in thread "main" NombreDeLaExcepcion: mensaje
     at D.metD(D.java:YY)
 ```
 
-#### b) Si la excepción es atrapada en `C.metC()`
+### b) Si la excepción es atrapada en `C.metC()`
 
 La traza será:
 ```
@@ -81,7 +49,7 @@ Exception in thread "main" NombreDeLaExcepcion: mensaje
     at C.metC(C.java:ZZ)
 ```
 
-#### c) Si la excepción es atrapada en `B.metB()`
+### c) Si la excepción es atrapada en `B.metB()`
 
 La traza será:
 ```
@@ -92,7 +60,7 @@ Exception in thread "main" NombreDeLaExcepcion: mensaje
     at B.metB(B.java:WW)
 ```
 
-#### d) Si la excepción es atrapada en `A.main()`
+### d) Si la excepción es atrapada en `A.main()`
 
 La traza será:
 ```
