@@ -14,11 +14,11 @@
 
 ## 🎯 Propósito del Repositorio
 
-Este repositorio fue diseñado como un complemento académico integral para la materia **Programación Orientada a Objetos (POO 2026)**, impartida en las carreras de **Analista de Sistemas** y **Licenciatura en Sistemas de Información** de la **Universidad Nacional de La Patagonia Austral (UARG)**.
+Este repositorio fue diseñado como un complemento académico integral para la materia **Programación Orientada a Objetos (POO 2026)**, impartida en las carreras de **Analista de Sistemas** y **Licenciatura en Sistemas** de la **Universidad Nacional de La Patagonia Austral (UARG)**.
 
 ### Objetivo Educativo
 
-El material que vas a encontrar acá tiene un propósito claro: **enriquecer tu experiencia de aprendizaje** más allá de lo visto en clases teóricas y prácticas. No pretendo ser un sustituto de la bibliografía recomendada ni de la enseñanza en aula, sino **un puente entre la teoría y la práctica** que:
+El material que vas a encontrar acá tiene un propósito claro: **enriquecer tu experiencia de aprendizaje** más allá de lo visto en clases teóricas y prácticas. No pretendo que este material sea un sustituto de la bibliografía recomendada ni de la enseñanza en aula, sino complemento, **un puente entre la teoría y la práctica** que:
 
 ✨ **Complementa** los conceptos teóricos con ejercicios prácticos contextualizados  
 ✨ **Expande** la bibliografía oficial con explicaciones adicionales y ejemplos concretos  
@@ -127,7 +127,7 @@ Cada proyecto en este repositorio sigue una estructura consistente:
 ## 🔧 Requisitos Técnicos (Generales)
 
 - **Java JDK**: Versión 8 o superior
-- **Sistema Operativo**: Linux OpenSUSE en lo posible, Windows o macOS
+- **Sistema Operativo**: Linux (OpenSUSE en lo posible), Windows o macOS
 - **Terminal/Consola**: Para compilar y ejecutar
 - **Editor de Código** (recomendado):
   - VS Code con extensión "Extension Pack for Java"
@@ -238,7 +238,7 @@ Este material fue creado con propósito educativo. Siéntete libre de:
 **Materia:** Programación Orientada a Objetos (POO) 2026  
 **Carreras:** 
 - Analista de Sistemas
-- Licenciatura en Sistemas de Información
+- Licenciatura en Sistemas
 
 ---
 
