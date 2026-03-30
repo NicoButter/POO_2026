@@ -34,11 +34,11 @@ Se propone la siguiente jerarquía de clases:
                 /                       \
                /                         \
           Radio                         Television
-   ┌─────────────────┐           ┌────────────────────────┐
-   │ - responsableMus│           │ - comercialesPorTanda  │
-   │ - minutosPropag │           │ - numeroTandas         │
-   │ + espacioComercial()         │ + totalComerciales()   │
-   └─────────────────┘           └────────────────────────┘
+   ┌────────────────    ─┐           ┌────────────────────────┐
+   │ - responsableMus    │           │ - comercialesPorTanda  │
+   │ - minutosPropag     │           │ - numeroTandas         │
+   │ + espacioComercial()            │ + totalComerciales()   │
+   └─────────────────    ┘           └────────────────────────┘
 ```
 
 ## c) Clase Test
