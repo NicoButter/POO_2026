@@ -42,7 +42,7 @@ POO_2026/
 │   ├── documentacion_soporte/         ← Material teórico complementario
 │   └── implementacion/                ← Código fuente solución
 │
-├── tp_01_2026/                        ← 🟠 PROYECTO: Trabajo Práctico 1 (próximamente)
+├── trabajo_practico_N1/               ← 🟢 PROYECTO: Trabajo Práctico 1 (completo)
 │   ├── README.md
 │   ├── enunciado/
 │   ├── documentacion_soporte/
@@ -178,9 +178,10 @@ Este repositorio está construido sobre principios educativos fundamentales:
 
 ## 📚 Proyectos Disponibles
 
+
 ### ✅ En Este Momento
 
-#### 🔴 **Diagnóstico 2026**
+#### 🔴 Diagnóstico 2026
 Un proyecto integral que evalúa tus conocimientos iniciales mediante:
 - Sistema de gestión de festival de música (Lollapalooza)
 - Introducción a conceptos: POJOs, Gestores, ArrayList, Modelado
@@ -189,9 +190,16 @@ Un proyecto integral que evalúa tus conocimientos iniciales mediante:
 
 **Ir a:** [`diagnostico_2026/`](diagnostico_2026/README.md)
 
+#### 🟢 Trabajo Práctico 1
+Ampliación de conceptos de herencia y polimorfismo:
+- Ejercicios resueltos, teoría, UML y código comentado
+- Material de soporte y diagramas explicativos
+- Código y documentación alineados con la cursada
+
+**Ir a:** [`trabajo_practico_N1/`](trabajo_practico_N1/)
+
 ### 🔜 Próximamente en la Cursada
 
-- **Trabajo Práctico 1**: Ampliación de conceptos de herencia y polimorfismo
 - **Trabajo Práctico 2**: Introducción a excepciones y manejo de errores
 - **Trabajo Práctico 3**: Persistencia de datos y archivos
 - Y más según avance la cursada...
