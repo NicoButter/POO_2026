@@ -1,4 +1,3 @@
-
 <div align="center" style="margin-bottom: 1em;">
    <!-- Coloca aquí la URL de tu imagen destacada (banner, logo, etc.) -->
    <img src="img/background.png" alt="Banner POO 2026" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px #0002;"/>
@@ -8,7 +7,10 @@
 
 **Autor:** Nicolás Butterfield  
 📧 nicobutter@gmail.com  
-🔗 GitHub: [@nicobutter](https://github.com/nicobutter)
+🔗 GitHub: [@nicobutter](https://github.com/nicobutter)  
+🔗 LinkedIn: [Nicolás Butterfield](https://www.linkedin.com/in/nicolás-butterfield-9964aa1a3)  
+🌐 Portfolio: [portfolionicolas2026.netlify.app](https://portfolionicolas2026.netlify.app/)  
+🎵 SoundCloud: [perda](https://soundcloud.com/user-785671138/perda)
 
 ---
 
@@ -254,7 +256,10 @@ Este material fue creado con propósito educativo. Siéntete libre de:
 
 **Autor:** Nicolás Butterfield  
 📧 **Email:** nicobutter@gmail.com  
-🔗 **GitHub:** [@nicobutter](https://github.com/nicobutter)
+🔗 **GitHub:** [@nicobutter](https://github.com/nicobutter)  
+🔗 LinkedIn: [Nicolás Butterfield](https://www.linkedin.com/in/nicolás-butterfield-9964aa1a3)  
+🌐 Portfolio: [portfolionicolas2026.netlify.app](https://portfolionicolas2026.netlify.app/)  
+🎵 SoundCloud: [perda](https://soundcloud.com/user-785671138/perda)
 
 ---
 
